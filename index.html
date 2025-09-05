@@ -19,8 +19,9 @@
             document.body.style.margin = "0 auto";
             document.body.style.transition = "all 0.5s ease";
 
-            // Стилизация заголовка
+            // Стилизация заголовка и изменение текста
             const heading = document.querySelector("h1");
+            heading.textContent = "Красивая страничка"; // Изменяем текст заголовка
             heading.style.color = "#6c5ce7";
             heading.style.textAlign = "center";
             heading.style.fontSize = "2.5em";
@@ -76,7 +77,7 @@
 
             // Добавляем кнопку для остановки конфетти
             const button = document.querySelector("button");
-            button.textContent = "Остановить конфетти";
+            button.textContent = "Сделай красиво";
             button.disabled = false;
             button.onclick = stopConfetti;
         }
@@ -206,7 +207,6 @@
 
             // Изменяем текст кнопки и обработчик события
             const button = document.querySelector("button");
-            button.textContent = "Снова конфетти!";
             button.onclick = startConfettiAgain;
         }
 
@@ -223,10 +223,7 @@
     </script>
 </head>
 <body>
-    <h1>Добро пожаловать!</h1>
-    <p>Это простая HTML-страница без единой строчки CSS. Все стили здесь стандартные, установленные браузером по умолчанию.</p>
-    <p>Если хотите увидеть, как выглядит современный дизайн, нажмите на кнопку ниже:</p>
+    <h1>Некрасивая страничка</h1>
     <button onclick="makeItBeautiful()">Сделай красиво</button>
-    <p>После нажатия на кнопку страница преобразится и вы увидите эффект падающих конфетти!</p>
 </body>
 </html>
